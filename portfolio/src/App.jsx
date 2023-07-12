@@ -12,7 +12,7 @@ import { Route, Routes } from 'react-router-dom'
 function App() {
 
   return (
-    <div>
+    <>
       <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -22,10 +22,9 @@ function App() {
         <Route path='/Experience' element={<Experience/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
-    </div>
+    </>
   )
 
 }
 
 export default App
-
