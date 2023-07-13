@@ -7,7 +7,6 @@ function About() {
     <div className={styles.wrapper}>
       <h1>Hi, my name is Jack Ashton.</h1>
 
-      <img className={styles.image} src='/public/images/profile1.jpg' alt="Image of Jack Ashton" />
 
       <p>
         I'm a former structural engineer who has recently finished a
