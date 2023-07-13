@@ -10,7 +10,6 @@ function NavBar() {
       <li> <Link to="/">J A</Link> </li>
       </ul>
       <ul className={styles.navlist}>
-        <li className={styles.link}> <Link to="/">Home</Link> </li>
         <li className={styles.link}> <Link to="/about">About</Link> </li>
         <li className={styles.link}> <Link to="/skills">Skills</Link> </li>
         <li className={styles.link}> <Link to="/experience">Experience</Link> </li>
