@@ -6,6 +6,9 @@ function NavBar() {
   return (
     <>
     <nav className={styles.wrapper}>
+      <ul className={styles.logolist}>
+      <li> <Link to="/">J A</Link> </li>
+      </ul>
       <ul className={styles.navlist}>
         <li className={styles.link}> <Link to="/">Home</Link> </li>
         <li className={styles.link}> <Link to="/about">About</Link> </li>
