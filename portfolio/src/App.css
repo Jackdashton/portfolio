@@ -1,6 +1,7 @@
 #root {
   width: 100%;
   margin: 0;
+  height: 100vh;
   padding: 2rem;
   text-align: center;
   background-color: rgba(16, 37, 83, 0.93);
