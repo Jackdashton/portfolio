@@ -1,0 +1,13 @@
+.links a {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  border-top: 3px rgba(40, 219, 201, 0.84) solid;
+}
