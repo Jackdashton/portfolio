@@ -2,14 +2,28 @@ h1 {
   color: white;
 }
 
+h2 {
+  color: rgba(40, 219, 201, 0.84);
+}
+
 p {
   color: white;
 }
 
-.image {
-  border-radius: 50%;
+html {
+  background-color: rgba(16, 37, 83, 0.93);
 }
 
 .wrapper {
-  border: 1px solid red;
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  gap: 10rem;
+}
+
+img {
+  border-radius: 25px;
+  width: 20rem;
+  /* border-bottom-right-radius: 50%; */
+  border: 3px solid white;
 }
