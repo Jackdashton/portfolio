@@ -27,3 +27,11 @@ img {
   /* border-bottom-right-radius: 50%; */
   border: 3px solid white;
 }
+
+.table, td, tr {
+  color: white;
+  border: 1px solid white;
+  background-color: rgba(40, 219, 201, 0.20);
+  font-size: large;
+  padding: 10px;
+}
