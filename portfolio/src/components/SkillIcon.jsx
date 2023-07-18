@@ -1,15 +1,24 @@
-import React from 'react'
-import styles from './SkillIcon.module.css'
+import React from "react";
+import styles from "./SkillIcon.module.css";
 
-function SkillIcon( {name, logo} ) {
+function SkillIcon({ name, logo }) {
+
+
+  function popUp() {
+    window.alert("Working");
+  }
+
   return (
     <>
-      <p>{name}</p>
-      <button className={styles.icon}>
-        <img src={"/public/images/icons/" + logo +".png"} alt="javascript logo" />
+      <button className={styles.icon} onClick={popUp}>
+        <img
+          src={"/public/images/icons/" + logo + ".png"}
+          alt="javascript logo"
+        />
       </button>
+      <p>{name}</p>
     </>
-  )
+  );
 }
 
-export default SkillIcon
+export default SkillIcon;
