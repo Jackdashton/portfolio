@@ -9,15 +9,19 @@ function Skills() {
     <div className={styles.wrapper}>
       <div className={styles.column}>
         <h2>Front End</h2>
-        <SkillIcon name={"JavaScript"} logo={"JavaScript"}/>
-        <SkillIcon name={"JavaScript"} logo={"JavaScript"}/>
-        <SkillIcon name={"JavaScript"} logo={"JavaScript"}/>
+        <div className={styles.icons}>
+          <SkillIcon name={"Ruby"} logo={"Ruby"}/>
+          <SkillIcon name={"Ruby"} logo={"Ruby"}/>
+          <SkillIcon name={"Ruby"} logo={"Ruby"}/>
+        </div>
       </div>
       <div className={styles.column}>
         <h2>Back End</h2>
-        <SkillIcon name={"Ruby"} logo={"Ruby"}/>
-        <SkillIcon name={"Ruby"} logo={"Ruby"}/>
-        <SkillIcon name={"Ruby"} logo={"Ruby"}/>
+        <div className={styles.icons}>
+          <SkillIcon name={"Ruby"} logo={"Ruby"}/>
+          <SkillIcon name={"Ruby"} logo={"Ruby"}/>
+          <SkillIcon name={"Ruby"} logo={"Ruby"}/>
+        </div>
       </div>
       <div className={styles.column}>
         <h2>Soft Skills</h2>

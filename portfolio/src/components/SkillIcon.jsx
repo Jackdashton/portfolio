@@ -10,13 +10,15 @@ function SkillIcon({ name, logo }) {
 
   return (
     <>
-      <button className={styles.icon} onClick={popUp}>
-        <img
-          src={"/public/images/icons/" + logo + ".png"}
-          alt="javascript logo"
-        />
-      </button>
-      <p>{name}</p>
+    <div className={styles.icon}>
+        <button className={styles.icon} onClick={popUp}>
+          <img
+            src={"/public/images/icons/" + logo + ".png"}
+            alt="javascript logo"
+          />
+        </button>
+        <p>{name}</p>
+      </div>
     </>
   );
 }
