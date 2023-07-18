@@ -14,7 +14,7 @@ function SkillIcon({ name, logo }) {
         <button className={styles.icon} onClick={popUp}>
           <img
             src={"/public/images/icons/" + logo + ".png"}
-            alt="javascript logo"
+            alt={ name + "logo"}
           />
         </button>
         <p>{name}</p>
