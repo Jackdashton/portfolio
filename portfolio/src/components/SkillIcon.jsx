@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./SkillIcon.module.css";
+// import SkillCard from "./SkillCard";
 
-function SkillIcon({ name, logo }) {
-  const [toggle, setToggle] = React.useState(false);
+function SkillIcon({ name, logo, toggle, setToggle }) {
+  // const [toggle, setToggle] = React.useState(false);
 
   return (
     <>
@@ -12,16 +13,6 @@ function SkillIcon({ name, logo }) {
           <img src={"images/icons/" + logo + ".png"} alt={name + "logo"} />
         </button>
         <p>{name}</p>
-        <p>Toggle status:{toggle}</p>
-        {toggle && (
-        <ul>
-          <li >An item</li>
-          <li >A second item</li>
-          <li >A third item</li>
-          <li >A fourth item</li>
-          <li >And a fifth one</li>
-        </ul>
-      )}
       </div>
     </>
   );
