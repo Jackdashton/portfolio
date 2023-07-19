@@ -13,4 +13,10 @@ export const skillData = [
     experience: '7+ Months',
     projects: 'Movie2Night',
   },
+  {
+    id: 'html',
+    title: 'HTML',
+    experience: '9+ Months',
+    projects: 'Movie2Night, Get your T-rex',
+  },
 ]

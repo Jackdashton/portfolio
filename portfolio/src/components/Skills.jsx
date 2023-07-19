@@ -1,9 +1,17 @@
 import React from "react";
 import SkillIcon from "./SkillIcon";
+import SkillCard from "./SkillCard";
 import styles from "./Skills.module.css";
 import { skillData } from "../skills.data.js";
 
+
+const skillInfo = Object.entries(skillData);
+
 function Skills() {
+  const [toggle, setToggle] = React.useState(false);
+  // set the skill on the Skills page, pass to SkillCard as prop
+  const [skill, setSkill] = React.useState();
+
   return (
     <>
       <h1>Skills</h1>
@@ -11,46 +19,127 @@ function Skills() {
         <div className={styles.column}>
           <h2>Front End</h2>
           <div className={styles.icons}>
-            <SkillIcon name={"JavaScript"} logo={"JavaScript"} />
-            <SkillIcon name={"HTML"} logo={"HTML"} />
-            <SkillIcon name={"CSS"} logo={"CSS"} />
-            <SkillIcon name={"React"} logo={"React"} />
-            <SkillIcon name={"Stimulus"} logo={"Stimulus"} />
-            <SkillIcon name={"WordPress"} logo={"WordPress"} />
+            <SkillIcon
+              name={"JavaScript"}
+              logo={"JavaScript"}
+              toggle={toggle}
+              setToggle={setToggle}
+              value={skill}
+              onChange={event => {
+                // .value or .id?
+                setSkill(event.target.id)
+                console.log(event.target.id)
+              }}
+            />
+            <SkillIcon
+              name={"HTML"}
+              logo={"HTML"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"CSS"}
+              logo={"CSS"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"React"}
+              logo={"React"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"Stimulus"}
+              logo={"Stimulus"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"WordPress"}
+              logo={"WordPress"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
           </div>
         </div>
         <div className={styles.column}>
           <h2>Back End</h2>
           <div className={styles.icons}>
-            <SkillIcon name={"Ruby"} logo={"Ruby"} />
-            <SkillIcon name={"Ruby on Rails"} logo={"RubyOnRails"} />
-            <SkillIcon name={"Python"} logo={"Python"} />
-            <SkillIcon name={"SQL"} logo={"SQL"} />
+            <SkillIcon
+              name={"Ruby"}
+              logo={"Ruby"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"Ruby on Rails"}
+              logo={"RubyOnRails"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"Python"}
+              logo={"Python"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"SQL"}
+              logo={"SQL"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
           </div>
         </div>
         <div className={styles.column}>
           <h2>Other Tech</h2>
           <div className={styles.icons}>
-            <SkillIcon name={"Figma"} logo={"Figma"} />
-            <SkillIcon name={"Heroku"} logo={"Heroku"} />
-            <SkillIcon name={"Terminal"} logo={"Terminal"} />
-            <SkillIcon name={"GitHub"} logo={"GitHub"} />
-            <SkillIcon name={"Bluebeam"} logo={"Bluebeam"} />
-            <SkillIcon name={"Autocad"} logo={"Autocad"} />
-            <SkillIcon name={"Tekla Design Suite"} logo={"Tekla"} />
+            <SkillIcon
+              name={"Figma"}
+              logo={"Figma"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"Heroku"}
+              logo={"Heroku"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"Terminal"}
+              logo={"Terminal"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"GitHub"}
+              logo={"GitHub"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"Bluebeam"}
+              logo={"Bluebeam"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"Autocad"}
+              logo={"Autocad"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
+            <SkillIcon
+              name={"Tekla Design Suite"}
+              logo={"Tekla"}
+              toggle={toggle}
+              setToggle={setToggle}
+            />
           </div>
         </div>
-        <div className={styles.column}>
-          <ul>
-            {skillData.map((element) => (
-              <div className={styles.skillCard} key={element.id}>
-                <h2>{element.title}</h2>
-                <p>Experience: {element.experience}</p>
-                <p>Projects: {element.projects}</p>
-              </div>
-            ))}
-          </ul>
-        </div>
+        <div className={styles.column}>{toggle && <SkillCard />}</div>
       </div>
     </>
   );
