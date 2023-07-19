@@ -1,7 +1,7 @@
 import React from "react";
 import SkillIcon from "./SkillIcon";
 import styles from "./Skills.module.css";
-import { skillData } from "../skills.data.js"
+import { skillData } from "../skills.data.js";
 
 function Skills() {
   return (
@@ -29,30 +29,29 @@ function Skills() {
           </div>
         </div>
         <div className={styles.column}>
-          <h2>Soft Skills</h2>
-        </div>
-        <div className={styles.column}>
           <h2>Other Tech</h2>
           <div className={styles.icons}>
             <SkillIcon name={"Figma"} logo={"Figma"} />
             <SkillIcon name={"Heroku"} logo={"Heroku"} />
             <SkillIcon name={"Terminal"} logo={"Terminal"} />
-            <SkillIcon name={"Github"} logo={"Github"} />
+            <SkillIcon name={"GitHub"} logo={"GitHub"} />
+            <SkillIcon name={"Bluebeam"} logo={"Bluebeam"} />
+            <SkillIcon name={"Autocad"} logo={"Autocad"} />
+            <SkillIcon name={"Tekla Design Suite"} logo={"Tekla"} />
           </div>
         </div>
+        <div className={styles.column}>
+          <ul>
+            {skillData.map((element) => (
+              <div className={styles.skillCard} key={element.id}>
+                <h2>{element.title}</h2>
+                <p>Experience: {element.experience}</p>
+                <p>Projects: {element.projects}</p>
+              </div>
+            ))}
+          </ul>
+        </div>
       </div>
-
-
-      <ul>
-        {skillData.map(element => (
-          <div className={styles.skillCard} key={element.id}>
-            <h2>{element.title}</h2>
-            <p>Experience: {element.experience}</p>
-            <p>Projects: {element.projects}</p>
-          </div>
-        ))}
-      </ul>
-
     </>
   );
 }

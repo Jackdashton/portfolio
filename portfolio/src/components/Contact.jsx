@@ -8,7 +8,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Contact() {
   return (
     <>
-      <h1>GET IN <span className={styles.specialWord}>TOUCH</span></h1>
+      <h1>
+        GET IN <span className={styles.specialWord}>TOUCH</span>
+      </h1>
       <div className={styles.wrapper}>
         <div className={styles.linkedin}>
           <h2>LinkedIn</h2>
@@ -16,7 +18,13 @@ function Contact() {
           <br />
           LinkedIn:
           <br />
-          <a href="https://www.linkedin.com/in/jack-david-ashton/">https://www.linkedin.com/in/jack-david-ashton/</a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/jack-david-ashton/"
+          >
+            https://www.linkedin.com/in/jack-david-ashton/
+          </a>
         </div>
         <div className={styles.email}>
           <h2>Email</h2>
