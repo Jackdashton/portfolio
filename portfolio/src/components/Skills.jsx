@@ -1,5 +1,6 @@
 import React from "react";
 import SkillIcon from "./SkillIcon";
+import SkillCard from './SkillCard'
 import styles from "./Skills.module.css";
 import { skillData } from "../skills.data.js";
 
@@ -41,15 +42,7 @@ function Skills() {
           </div>
         </div>
         <div className={styles.column}>
-          <ul>
-            {skillData.map((element) => (
-              <div className={styles.skillCard} key={element.id}>
-                <h2>{element.title}</h2>
-                <p>Experience: {element.experience}</p>
-                <p>Projects: {element.projects}</p>
-              </div>
-            ))}
-          </ul>
+          <SkillCard/>
         </div>
       </div>
     </>
