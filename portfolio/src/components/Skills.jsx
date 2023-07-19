@@ -4,8 +4,13 @@ import SkillCard from "./SkillCard";
 import styles from "./Skills.module.css";
 import { skillData } from "../skills.data.js";
 
+
+const skillInfo = Object.entries(skillData);
+
 function Skills() {
-  const [toggle, setToggle] = React.useState(true);
+  const [toggle, setToggle] = React.useState(false);
+  // set the skill on the Skills page, pass to SkillCard as prop
+  const [skill, setSkill] = React.useState();
 
   return (
     <>
@@ -19,6 +24,12 @@ function Skills() {
               logo={"JavaScript"}
               toggle={toggle}
               setToggle={setToggle}
+              value={skill}
+              onChange={event => {
+                // .value or .id?
+                setSkill(event.target.id)
+                console.log(event.target.id)
+              }}
             />
             <SkillIcon
               name={"HTML"}
