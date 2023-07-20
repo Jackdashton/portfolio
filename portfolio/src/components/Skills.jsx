@@ -27,39 +27,37 @@ function Skills() {
               id={"js"}
               name={"JavaScript"}
               logo={"JavaScript"}
-              toggle={toggle}
-              setToggle={setToggle}
               onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"html"}
               name={"HTML"}
               logo={"HTML"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"css"}
               name={"CSS"}
               logo={"CSS"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"react"}
               name={"React"}
               logo={"React"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"stimulus"}
               name={"Stimulus"}
               logo={"Stimulus"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"wordpress"}
               name={"WordPress"}
               logo={"WordPress"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
           </div>
         </div>
@@ -67,28 +65,28 @@ function Skills() {
           <h2>Back End</h2>
           <div className={styles.icons}>
             <SkillIcon
+              id={"ruby"}
               name={"Ruby"}
               logo={"Ruby"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"ror"}
               name={"Ruby on Rails"}
               logo={"RubyOnRails"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"python"}
               name={"Python"}
               logo={"Python"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"sql"}
               name={"SQL"}
               logo={"SQL"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
           </div>
         </div>
@@ -96,46 +94,46 @@ function Skills() {
           <h2>Other Tech</h2>
           <div className={styles.icons}>
             <SkillIcon
+              id={"figma"}
               name={"Figma"}
               logo={"Figma"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"hero"}
               name={"Heroku"}
               logo={"Heroku"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"term"}
               name={"Terminal"}
               logo={"Terminal"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"gh"}
               name={"GitHub"}
               logo={"GitHub"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"blue"}
               name={"Bluebeam"}
               logo={"Bluebeam"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"auto"}
               name={"Autocad"}
               logo={"Autocad"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
             <SkillIcon
+              id={"tds"}
               name={"Tekla Design Suite"}
               logo={"Tekla"}
-              toggle={toggle}
-              setToggle={setToggle}
+              onClick={handleSkillClick}
             />
           </div>
         </div>
