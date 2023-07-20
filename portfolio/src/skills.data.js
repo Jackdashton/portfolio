@@ -73,4 +73,34 @@ export const skillData = [
     experience: '9+ Months',
     projects: 'Movie2Night, Get your T-rex',
   },
+  {
+    id: 'term',
+    title: 'Terminal',
+    experience: '9+ Months',
+    projects: 'Movie2Night, Get your T-rex',
+  },
+  {
+    id: 'gh',
+    title: 'GitHub',
+    experience: '9+ Months',
+    projects: 'Movie2Night, Get your T-rex',
+  },
+  {
+    id: 'blue',
+    title: 'Bluebeam',
+    experience: '9+ Months',
+    projects: 'Movie2Night, Get your T-rex',
+  },
+  {
+    id: 'auto',
+    title: 'Autocad',
+    experience: '9+ Months',
+    projects: 'Movie2Night, Get your T-rex',
+  },
+  {
+    id: 'tds',
+    title: 'Tekla Design Suite',
+    experience: '9+ Months',
+    projects: 'Movie2Night, Get your T-rex',
+  },
 ]
