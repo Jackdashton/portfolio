@@ -4,13 +4,17 @@ import SkillCard from "./SkillCard";
 import styles from "./Skills.module.css";
 import { skillData } from "../skills.data.js";
 
-
-const skillInfo = Object.entries(skillData);
+// const skillInfo = Object.entries(skillData);
 
 function Skills() {
   const [toggle, setToggle] = React.useState(false);
   // set the skill on the Skills page, pass to SkillCard as prop
-  const [skill, setSkill] = React.useState();
+  const [selectedSkill, setSelectedSkill] = React.useState(null);
+
+  function handleSkillClick(skill) {
+    setSelectedSkill(skillData.find((item) => item.id === skill.id));
+    console.log(skill)
+  }
 
   return (
     <>
@@ -20,16 +24,12 @@ function Skills() {
           <h2>Front End</h2>
           <div className={styles.icons}>
             <SkillIcon
+              id={"js"}
               name={"JavaScript"}
               logo={"JavaScript"}
               toggle={toggle}
               setToggle={setToggle}
-              value={skill}
-              onChange={event => {
-                // .value or .id?
-                setSkill(event.target.id)
-                console.log(event.target.id)
-              }}
+              onClick={handleSkillClick}
             />
             <SkillIcon
               name={"HTML"}
@@ -139,7 +139,17 @@ function Skills() {
             />
           </div>
         </div>
-        <div className={styles.column}>{toggle && <SkillCard />}</div>
+        <div className={styles.column}>
+        {selectedSkill ? (
+            <div className={styles.skillCard}>
+              <h2>{selectedSkill.title}</h2>
+              <p>Experience: {selectedSkill.experience}</p>
+              <p>Projects: {selectedSkill.projects}</p>
+            </div>
+          ) : (
+            <p>Select a skill</p>
+          )}
+        </div>
       </div>
     </>
   );
