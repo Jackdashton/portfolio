@@ -6,7 +6,7 @@ import { skillData } from "../skills.data.js";
 
 // const skillInfo = Object.entries(skillData);
 
-function Skills() {
+function Skills(logo) {
   const [toggle, setToggle] = React.useState(false);
   // set the skill on the Skills page, pass to SkillCard as prop
   const [selectedSkill, setSelectedSkill] = React.useState(null);
@@ -137,7 +137,7 @@ function Skills() {
             />
           </div>
         </div>
-        <div className={styles.column}>
+        <div className={styles.column} id={styles.skillColumn}>
         {selectedSkill ? (
             <div className={styles.skillCard}>
               <h2>{selectedSkill.title}</h2>
