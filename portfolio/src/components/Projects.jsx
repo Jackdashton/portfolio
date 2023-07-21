@@ -22,7 +22,7 @@ function Projects() {
             {/* <div style={{ backgroundImage: `url(/${project.images?.[0]}.JPG)` }}> */}
               <h2>{project.title}</h2>
               <p>Tech Stack: {project.tech}</p>
-              <p>Description: {project.description}</p>
+              <p>{project.description}</p>
             </div>
           // </div>
         ))}
