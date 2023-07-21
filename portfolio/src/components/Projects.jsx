@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import { projectData } from "../projects.data.js";
-import styles from './Projects.module.css'
+import styles from "./Projects.module.css";
 
 function Projects() {
   return (
@@ -12,13 +12,19 @@ function Projects() {
           <div className={styles.projectCard} key={project.id}>
             {project.images?.map((type, index) => {
               return (
-                <p key={index}>{type}</p>
-              )
+                <ul key={index}>
+                  <li>
+                    {<img src={`/images/screenshots/${type}.JPG`} alt="" />}
+                  </li>
+                </ul>
+              );
             })}
-            <h2>{project.title}</h2>
-            <p>Tech Stack: {project.tech}</p>
-            <p>Projects: {project.description}</p>
-          </div>
+            {/* <div style={{ backgroundImage: `url(/${project.images?.[0]}.JPG)` }}> */}
+              <h2>{project.title}</h2>
+              <p>Tech Stack: {project.tech}</p>
+              <p>Description: {project.description}</p>
+            </div>
+          // </div>
         ))}
       </div>
     </>
@@ -26,5 +32,3 @@ function Projects() {
 }
 
 export default Projects;
-
-{/* <img src={`/images/screenshots/t-rex screenshot2.JPG`} alt="" /> */}
