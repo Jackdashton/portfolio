@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+
+.projectCard {
+  border: 1px white solid;
+  width: 33%;
+}
