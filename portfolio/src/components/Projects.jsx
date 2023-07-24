@@ -16,18 +16,20 @@ function Projects() {
       <li> <Link to="/task">Task List</Link> </li>
       <div className={styles.wrapper}>
         {projectData.map((project) => (
-          <div className={styles.projectCard} key={project.id}>
+          <div className={styles.projectCard} key={project.id} >
             {project.images?.length > 0 && (
-              <>
-                <ul>
-                  <li>
-                    {<img src={`/images/screenshots/${project.images[0]}.JPG`} alt="" />}
-                  </li>
-                </ul>
+              <div style=
+              {{
+                backgroundImage: `url(/images/screenshots/${project.images[0]}.JPG)`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                width: '100%',
+                height: '100%',
+                backgroundPosition: 'center',
+              }} >
               <h2>{project.title}</h2>
-              <p>Tech Stack: {project.tech}</p>
-              <p>{project.description}</p>
-              </>)}
+              </div>
+              )}
             </div>
         ))}
       </div>
