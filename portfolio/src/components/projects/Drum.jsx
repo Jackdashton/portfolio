@@ -24,7 +24,6 @@ function Drum() {
       <h1>Drumkit</h1>
       {project.title}
       {project.tech}
-      {project.description}
       {project.images?.map((type, index) => {
               return (
                 <ul key={index}>
