@@ -9,6 +9,10 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Cabinn from "./components/projects/Cabinn";
 import Trex from "./components/projects/Trex";
+import Movie from "./components/projects/Movie";
+import Owl from "./components/projects/Owl";
+import Drum from "./components/projects/Drum";
+import Task from "./components/projects/Task";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -22,8 +26,12 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/Experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/Cabinn" element={<Cabinn />} />
-        <Route path="/Trex" element={<Trex />} />
+        <Route path="/cabinn" element={<Cabinn />} />
+        <Route path="/trex" element={<Trex />} />
+        <Route path="/movie" element={<Movie />} />
+        <Route path="/owl" element={<Owl />} />
+        <Route path="/drum" element={<Drum />} />
+        <Route path="/task" element={<Task />} />
       </Routes>
       <Footer />
     </>

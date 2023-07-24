@@ -8,8 +8,12 @@ function Projects() {
   return (
     <>
       <h1>Projects</h1>
-      <li> <Link to="/Cabinn">Cabinn</Link> </li>
-      <li> <Link to="/Trex">Get your T-rex</Link> </li>
+      <li> <Link to="/cabinn">Cabinn</Link> </li>
+      <li> <Link to="/trex">Get your T-rex</Link> </li>
+      <li> <Link to="/movie">Movie2Night</Link> </li>
+      <li> <Link to="/owl">Escape the Owl</Link> </li>
+      <li> <Link to="/drum">Drumkit</Link> </li>
+      <li> <Link to="/task">Task List</Link> </li>
       <div className={styles.wrapper}>
         {projectData.map((project) => (
           <div className={styles.projectCard} key={project.id}>
