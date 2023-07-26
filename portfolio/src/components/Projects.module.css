@@ -1,18 +1,28 @@
-.wrapper {
+.gridContainer{
   display: flex;
-  gap: 20px;
-  margin: 20px;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 1rem;
 }
 
-img {
-  width: 50%;
-  height: 50%;
+
+.gridItem {
+  flex: 1 0 25%;
+  padding: 4rem;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid white;
 }
 
-.projectCard {
-  border: 1px white solid;
-  width: 33%;
-  > ul {
-    list-style: none;
-  }
+.gridItem > background-img {
+  border: 1px solid red;
+}
+
+.gridItem > a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgba(40, 219, 201, 0.84);
+  padding: 100px;
+  font-weight: 900;
 }

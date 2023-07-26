@@ -7,10 +7,10 @@ function Projects() {
   return (
     <>
       <h1>Projects</h1>
-      <div className={styles.wrapper}>
+      <div className={styles.gridContainer}>
         {projectData.map((project) => (
           <div
-            className={styles.projectCard}
+            className={styles.gridItem}
             key={project.id}
             style={{
               backgroundImage: `url(/images/screenshots/${project.images[0]}.JPG)`,

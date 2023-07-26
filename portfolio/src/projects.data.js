@@ -4,7 +4,7 @@ export const projectData = [
     title: "Get your T-rex",
     link: "trex",
     tech: "Ruby on Rails, JavaScript, HTML, CSS, Stimulus, Bootstrap",
-    images: ["t-rex screenshot1", "t-rex screenshot2"],
+    images: ["rex1", "rex2", "rex3", "rex4", ],
   },
   {
     id: crypto.randomUUID(),
@@ -41,11 +41,11 @@ export const projectData = [
     tech: "JavaScript, HTML and CSS",
     images: ["task1"],
   },
-  {
-    id: crypto.randomUUID(),
-    title: "Structural Engineering",
-    link: "structure",
-    tech: "Bluebeam, Tekla Structural Designer, Tedds, Autocad",
-    images: ["t-rex screenshot1", "t-rex screenshot2"],
-  },
+  // {
+  //   id: crypto.randomUUID(),
+  //   title: "Structural Engineering",
+  //   link: "structure",
+  //   tech: "Bluebeam, Tekla Structural Designer, Tedds, Autocad",
+  //   images: ["t-rex screenshot1", "t-rex screenshot2"],
+  // },
 ];
