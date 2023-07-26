@@ -2,7 +2,13 @@
   width: 100%;
   margin: 0;
   height: 100vh;
-  padding: 2rem;
   text-align: center;
   background-color: rgba(16, 37, 83, 0.93);
+}
+
+.App {
+  min-height: 100vh;
+  min-width: 100wh;
+  display: flex;
+  flex-direction: column;
 }

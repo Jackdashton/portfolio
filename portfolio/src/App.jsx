@@ -17,7 +17,7 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -34,7 +34,7 @@ function App() {
         <Route path="/task" element={<Task />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 
