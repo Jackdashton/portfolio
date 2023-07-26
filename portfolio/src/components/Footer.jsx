@@ -7,10 +7,13 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 // faCoffee is icon name, import from solid svg icons
 
 function Footer() {
+
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <div className={styles.wrapper}>
-      <p>© 2023 Jack Ashton </p>
+      <p>© {currentYear} Jack Ashton </p>
         <div className={styles.links}>
           <a href="https://github.com/Jackdashton" target="_blank">
             <FontAwesomeIcon icon={faGithub} size="2xl" />
