@@ -16,6 +16,7 @@ function Contact() {
           <h2>LinkedIn</h2>
           <FontAwesomeIcon icon={faLinkedin} size="2xl" />
           <br />
+          <br />
           LinkedIn:
           <br />
           <a
@@ -30,6 +31,7 @@ function Contact() {
           <h2>Email</h2>
           <FontAwesomeIcon icon={faEnvelope} size="2xl" />
           <br />
+          <br />
           Email:
           <br />
           Jackdashton@outlook.com
@@ -37,6 +39,7 @@ function Contact() {
         <div className={styles.phone}>
           <h2>Phone</h2>
           <FontAwesomeIcon icon={faPhone} size="2xl" />
+          <br />
           <br />
           Please use email or LinkedIn for initial contact. A telphone number
           will then be provided.
