@@ -1,18 +1,17 @@
 import React from "react";
 import SkillIcon from "./SkillIcon";
-import SkillCard from "./SkillCard";
 import styles from "./Skills.module.css";
 import { skillData } from "../skills.data.js";
 
 // const skillInfo = Object.entries(skillData);
 
-function Skills(logo) {
+function Skills() {
   // set the skill on the Skills page, pass to SkillCard as prop
   const [selectedSkill, setSelectedSkill] = React.useState(null);
 
   function handleSkillClick(skill) {
     setSelectedSkill(skillData.find((item) => item.id === skill.id));
-    console.log(skill)
+    console.log(skill);
   }
 
   return (
@@ -137,11 +136,13 @@ function Skills(logo) {
           </div>
         </div>
         <div className={styles.column} id={styles.skillColumn}>
-        {selectedSkill ? (
+          {selectedSkill ? (
             <div className={styles.skillCard}>
               <h2>{selectedSkill.title}</h2>
-              <p>Experience: {selectedSkill.experience}</p>
-              <p>Projects: {selectedSkill.projects}</p>
+              <p>Experience:</p>
+              {selectedSkill.experience}
+              <p>Projects: </p>
+              {selectedSkill.projects}
             </div>
           ) : (
             <p>Select a skill</p>
