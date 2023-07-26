@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./SkillIcon.module.css";
-// import SkillCard from "./SkillCard";
+import PropTypes from 'prop-types'
 
 function SkillIcon({ name, logo, id, onClick }) {
   // const [toggle, setToggle] = React.useState(false);
@@ -23,6 +23,13 @@ function SkillIcon({ name, logo, id, onClick }) {
       </div>
     </>
   );
+}
+
+SkillIcon.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 }
 
 export default SkillIcon;
