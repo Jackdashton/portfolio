@@ -139,9 +139,9 @@ function Skills() {
           {selectedSkill ? (
             <div className={styles.skillCard}>
               <h2>{selectedSkill.title}</h2>
-              <p>Experience:</p>
+              <p><strong>Experience:</strong></p>
               {selectedSkill.experience}
-              <p>Projects: </p>
+              <p><strong>Projects:</strong></p>
               {selectedSkill.projects}
             </div>
           ) : (
