@@ -5,9 +5,7 @@ import { faShuttleSpace } from "@fortawesome/free-solid-svg-icons";
 
 function Cabinn() {
   function findArrayElementByTitle(title) {
-    return projectData.find((element) => {
-      return element.title === title;
-    });
+    return projectData.find((element) => element.title === title);
   }
 
   const project = findArrayElementByTitle("CabInn");

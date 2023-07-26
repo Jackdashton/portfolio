@@ -14,17 +14,14 @@ function About() {
 
         <div className={styles.information}>
             <dl>
-              <dt>Name</dt>
-              <dd>Jack Ashton</dd>
-              <br />
-              <dt>Location</dt>
-              <dd>Edinburg, Scotland</dd>
-              <br />
-              <dt>Current Position</dt>
-              <dd>Frontend Developer - Scottish Tech Army</dd>
-              <br />
-              <dt>Profile</dt>
-              <dd>
+              <h4>Name</h4>
+              <p>Jack Ashton</p>
+              <h4>Location</h4>
+              <p>Edinburgh, Scotland / Remote</p>
+              <h4>Current Position</h4>
+              <p>Frontend Developer - Scottish Tech Army</p>
+              <h4>Profile</h4>
+              <p>
                 {" "}
                 I'm a former structural engineer who has recently finished a
                 Fullstack Web Development Course. I am now actively seeking a
@@ -38,10 +35,9 @@ function About() {
                 which covered the core concepts of Object-orientated programming
                 through both front and backend development. My skills include
                 Ruby/Ruby on Rails, JavaScript, HTML, CSS and SQL.
-              </dd>
-              <br />
-              <dt>Testimonials</dt>
-              <dd>
+              </p>
+              <h4>Testimonials</h4>
+              <p>
                 {" "}
                 Jack spent part of his employment at Etive Consulting working
                 directly for me on numerous large scale commercial projects.
@@ -55,24 +51,24 @@ function About() {
                 Jack would be an asset to any business, where he will bring
                 professionalism, a hard working ethic and a willingness to
                 strive to be better.{" "}
-                <span>
+                <span className={styles.quote}>
                   - Alastair Manson, Associate Director , Etive Consulting
                   Engineers Ltd
                 </span>
-              </dd>
+              </p>
               <br />
-              <dd>
+              <p>
                 {" "}
                 Today's appreciation post is for Jack Ashton and the great work
                 he is doing with Esolperth! The new website is looking fantastic
                 and Jack's organisation skills and attention to detail are
                 superb. It's a joy to leave the charity with a good website and
                 the ability to maintain the site going forward!{" "}
-                <span>
+                <span className={styles.quote}>
                   - Joanna Allen, Head of Projects & Programmes, Scottish Tech
                   Army
                 </span>
-              </dd>
+              </p>
             </dl>
           </div>
         </div>
