@@ -28,13 +28,20 @@ img {
   border: 3px solid white;
 }
 
-.table, td, tr {
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  border: 1px solid white;
-  background-color: rgba(40, 219, 201, 0.20);
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 1rem;
-  font-family: sans-serif;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+dt {
+  display: flex;
+  justify-content: center;
+  color: rgba(40, 219, 201, 0.84);
+}
+
+dd {
+  display: flex;
+  justify-content: center;
 }
