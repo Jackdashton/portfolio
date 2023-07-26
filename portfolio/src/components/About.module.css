@@ -2,10 +2,6 @@ h1 {
   color: white;
 }
 
-h2 {
-  color: rgba(40, 219, 201, 0.84);
-}
-
 p {
   color: white;
 }
@@ -35,13 +31,6 @@ img {
   color: white;
 }
 
-dt {
-  display: flex;
-  justify-content: center;
-  color: rgba(40, 219, 201, 0.84);
-}
-
-dd {
-  display: flex;
-  justify-content: center;
+.quote {
+  color: rgba(40, 219, 201, 0.84) ;
 }
