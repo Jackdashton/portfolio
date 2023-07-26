@@ -15,10 +15,10 @@ function Footer() {
       <div className={styles.wrapper}>
       <p>© {currentYear} Jack Ashton </p>
         <div className={styles.links}>
-          <a href="https://github.com/Jackdashton" target="_blank">
+          <a href="https://github.com/Jackdashton" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2xl" />
           </a>
-          <a href="https://linkedin.com/in/jack-david-ashton" target="_blank">
+          <a href="https://linkedin.com/in/jack-david-ashton" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size="2xl" />
           </a>
         </div>
