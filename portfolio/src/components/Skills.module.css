@@ -24,7 +24,7 @@ h2 {
 #skillColumn {
   border: 1px white solid;
   background-color: rgba(40, 219, 201, 0.84);
-  opacity: 85%;
   width: 35%;
   color: white;
+  border-radius: 6px;
 }
