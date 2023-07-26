@@ -1,28 +1,32 @@
-.gridContainer{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  padding: 1rem;
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  margin: 0 20px;
 }
-
 
 .gridItem {
-  flex: 1 0 25%;
-  padding: 4rem;
-  height: 100px;
-  width: 100px;
-  border-radius: 10px;
-  border: 1px solid white;
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
+  transition: filter 0.2s ease;
 }
 
-.gridItem > background-img {
-  border: 1px solid red;
+.gridItem:hover {
+  filter: grayscale(0%);
 }
 
 .gridItem > a {
   font-size: 2rem;
   text-decoration: none;
-  color: rgba(40, 219, 201, 0.84);
-  padding: 100px;
+  color: white;
   font-weight: 900;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
