@@ -7,7 +7,7 @@ function About() {
       <div className={styles.wrapper}>
         <div className={styles.profile}>
           <h1>Jack Ashton</h1>
-          <h2>Web Developer</h2>
+          <h2>Full Stack Developer</h2>
           {/* Public files are available with /, no need for . or .. */}
           <img src="/public/images/profile2.JPG" alt="Photo of Jack" />
         </div>
