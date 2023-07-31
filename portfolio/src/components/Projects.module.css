@@ -30,3 +30,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.gridCard > h3 {
+  font-size: 1rem;
+  color: white;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridCard {
+  margin-bottom: 10px;
+}
