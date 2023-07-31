@@ -140,9 +140,9 @@ function Skills() {
             <div className={styles.skillCard}>
               <h2>{selectedSkill.title}</h2>
               <p><strong>Experience:</strong></p>
-              {selectedSkill.experience}
+              <p>{selectedSkill.experience}</p>
               <p><strong>Projects:</strong></p>
-              {selectedSkill.projects}
+              <p>{selectedSkill.projects}</p>
             </div>
           ) : (
             <p>Select a skill</p>
