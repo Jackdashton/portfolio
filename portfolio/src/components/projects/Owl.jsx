@@ -18,9 +18,9 @@ function Owl() {
       <div className={styles.wrapper}>
         <div className={styles.header}>{project.title}</div>
         <div className={styles.info}>
-          <p>Tech Stack:</p>
+          <h3>Tech Stack:</h3>
           {project.tech}
-          <p>Description:</p>
+          <h3>Description:</h3>
           <p>
             Developed a web-based vocabulary quiz game using JavaScript, HTML
             and CSS. The app allows users to play a vocabulary quiz game by
@@ -33,6 +33,15 @@ function Owl() {
             CSS and HTML.
             <br />
           </p>
+          <h3>Link:</h3>
+          <a
+            href="https://github.com/Jackdashton/Escape-the-Owl"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Escape the Owl
+          </a>
+          <br />
         </div>
         <div className={styles.images}>
           {project.images?.map((type, index) => {

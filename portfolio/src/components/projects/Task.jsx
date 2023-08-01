@@ -18,14 +18,22 @@ function Task() {
       <div className={styles.wrapper}>
         <div className={styles.header}>{project.title}</div>
         <div className={styles.info}>
-          <p>Tech Stack:</p>
+          <h3>Tech Stack:</h3>
           {project.tech}
-          <p>Description:</p>
+          <h3>Description:</h3>
           <p>
             Creation of a Task list app to improve JavaScript fundamentals as
             well as CSS and HTML front-end capabilities.
             <br />
           </p>
+          <h3>Link:</h3>
+          <a
+            href="https://github.com/Jackdashton/to-do-list"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Task List
+          </a>
         </div>
         <div className={styles.images}>
           {project.images?.map((type, index) => {

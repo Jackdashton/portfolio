@@ -1,6 +1,6 @@
 import React from "react";
 import { projectData } from "../../projects.data.js";
-import styles from "./Drum.module.css"
+import styles from "./Drum.module.css";
 
 function Drum() {
   function findArrayElementByTitle(title) {
@@ -18,19 +18,23 @@ function Drum() {
       <div className={styles.wrapper}>
         <div className={styles.header}>{project.title}</div>
         <div className={styles.info}>
-          <p>Tech Stack:</p>
+          <h3>Tech Stack:</h3>
           {project.tech}
-          <p>Description:</p>
+          <h3>Description:</h3>
           <p>
-            Took the lead in ensuring that the API data was accurately consumed
-            on the front-end, focusing particularly on its responsiveness to
-            deliver a seamless user experience. My efforts resulted in an
-            improved, efficient, and user-friendly interface. Performed
-            additional work on the frontend of the app, this allowed us to
-            ensure a better user experience.
-            <br />
+            Created a web-based app which would play sounds linked to their
+            associated button or keystroke. This was a useful project for
+            learning DOM manipulation.
             <br />
           </p>
+          <h3>Link:</h3>
+          <a
+            href="https://github.com/Jackdashton/drumkit"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Drumkit
+          </a>
         </div>
         <div className={styles.images}>
           {project.images?.map((type, index) => {
