@@ -138,7 +138,7 @@ function Skills() {
         <div className={styles.column} id={styles.skillColumn}>
           {selectedSkill ? (
             <div className={styles.skillCard}>
-              <h2>{selectedSkill.title}</h2>
+              <h3>{selectedSkill.title}</h3>
               <p><strong>Experience:</strong></p>
               <p>{selectedSkill.experience}</p>
               <p><strong>Projects:</strong></p>

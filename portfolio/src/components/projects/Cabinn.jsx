@@ -19,8 +19,8 @@ function Cabinn() {
       <div className={styles.wrapper}>
         <div className={styles.header}>{project.title}</div>
         <div className={styles.info}>
-          <p>Tech Stack:</p>{project.tech}
-          <p>Description:</p>
+          <h3>Tech Stack:</h3>{project.tech}
+          <h3>Description:</h3>
           <p>
             Cabinn is a marketplace app for finding a rental cabin at a holiday
             destination of your choosing. The application allows a user to see
@@ -35,6 +35,22 @@ function Cabinn() {
             The project included Ruby gems such as Mapbox geolocation as well as
             unit testing.
           </p>
+          <h3>Link:</h3>
+          <a
+            href="https://github.com/Jackdashton/CabInn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+          <br />
+          <a
+            href="https://cabinn.herokuapp.com/flats"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Website
+          </a>
         </div>
         <div className={styles.images}>
           {project.images?.map((type, index) => {

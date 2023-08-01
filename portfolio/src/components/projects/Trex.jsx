@@ -18,9 +18,9 @@ function Trex() {
       <div className={styles.wrapper}>
         <div className={styles.header}>{project.title}</div>
         <div className={styles.info}>
-          <p>Tech Stack:</p>
+          <h3>Tech Stack:</h3>
           {project.tech}
-          <p>Description:</p>
+          <h3>Description:</h3>
           <p>
             This was the first app that I worked on in the Bootcamp. We worked
             in an interdisciplinary team of four, dividing the work between
@@ -29,8 +29,17 @@ function Trex() {
             website; creating the database using SQLite as well as creating and
             testing the user registration and login features.
             <br />
-            <br />
           </p>
+          <h3>Github Link:</h3>
+          <a
+            href="https://github.com/Clotto42524/rails-get-your-t-rex"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Get your T-rex
+          </a>
+          <br />
+          <br />
         </div>
         <div className={styles.images}>
           {project.images?.map((type, index) => {

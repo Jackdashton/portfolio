@@ -18,9 +18,9 @@ function Movie() {
       <div className={styles.wrapper}>
         <div className={styles.header}>{project.title}</div>
         <div className={styles.info}>
-          <p>Tech Stack:</p>
+          <h3>Tech Stack:</h3>
           {project.tech}
-          <p>Description:</p>
+          <h3>Description:</h3>
           <p>
             Took the lead in ensuring that the API data was accurately consumed
             on the front-end, focusing particularly on its responsiveness to
@@ -31,6 +31,16 @@ function Movie() {
             <br />
             <br />
           </p>
+          <h3>Link:</h3>
+          <a
+            href="https://github.com/Clotto42524/movie-2night"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Movie2Night
+          </a>
+          <br />
+          <br />
         </div>
         <div className={styles.images}>
           {project.images?.map((type, index) => {

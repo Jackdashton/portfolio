@@ -13,4 +13,7 @@
 .wrapper {
   margin-top: auto;
   border-top: 3px rgba(40, 219, 201, 0.84) solid;
+  > p {
+    color: white;
+  }
 }
