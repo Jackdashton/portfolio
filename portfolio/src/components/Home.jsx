@@ -1,19 +1,25 @@
 import React from "react";
 import styles from "./Home.module.css";
 import Button from "./Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
+  const [toggle, setToggle] = React.useState(false);
+
+  function toggleMenu() {
+    console.log("Connected");
+    setToggle(!toggle);
+  }
+
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.menu}>
-          <Button item="About" />
-          <Button item="Skills" />
-          <Button item="Experience" />
-          <Button />
-          <Button item="Projects" />
-          <Button item="Contact" />
-        </div>
+        <ul className={styles.menu}>
+          <div className={`${styles.toggle} ${toggle ? styles.active : ""}`} onClick={toggleMenu} >
+            <FontAwesomeIcon icon={faBars} />
+          </div>
+        </ul>
       </div>
     </>
   );
@@ -22,18 +28,12 @@ function Home() {
 export default Home;
 
 {
-  /* <div
-className={styles.container}
-style={{
-  backgroundImage: "url(/public/images/Home.jpg)",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  width: "100%",
-  height: "100%",
-  backgroundPosition: "center",
-  opacity: "8%",
-}}
->
-<h1>Welcome</h1>
-</div> */
+  /* <div className={styles.menu}>
+          <Button item="About" />
+          <Button item="Skills" />
+          <Button item="Experience" />
+          <Button />
+          <Button item="Projects" />
+          <Button item="Contact" />
+        </div> */
 }
