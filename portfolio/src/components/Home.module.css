@@ -24,8 +24,12 @@ height: 100%;
   font-size: 2rem;
   border: 1px solid aqua;
   cursor: pointer;
+  transition: 0.7s;
 }
 
 .menu .toggle.active {
-  background-color: yellow;
+  transform: rotate(315deg);
+  box-shadow: 0 0 0 60px white,
+  0 0 0 68px white;
+  background: blue;
 }
