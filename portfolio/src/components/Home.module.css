@@ -74,16 +74,16 @@
 }
 /* Experience */
 .menu .toggle.active li:nth-child(4) {
-  transform: translateX(-50%) translateY(-50%) rotate(216deg) translate(140px) rotate(-72deg);
+  transform: translateX(-50%) translateY(-50%) rotate(216deg) translate(140px) rotate(-171deg);
 }
 /* Project */
 .menu .toggle.active li:nth-child(5) {
-  transform: translateX(-50%) translateY(-50%) rotate(288deg) translate(140px) rotate(-72deg);
+  transform: translateX(-50%) translateY(-50%) rotate(288deg) translate(140px) rotate(-243deg);
 }
 
 /* Contact */
 .menu .toggle.active li:nth-child(6) {
-  transform: translateX(-50%) translateY(-50%) rotate(360deg) translate(140px) rotate(-72deg);
+  transform: translateX(-50%) translateY(-50%) rotate(360deg) translate(140px) rotate(-315deg);
 }
 
 /* translate(140px) controls distance from the middle */
