@@ -16,8 +16,21 @@ function Home() {
     <>
       <div className={styles.container}>
         <ul className={styles.menu}>
-          <div className={`${styles.toggle} ${toggle ? styles.active : ""}`} onClick={toggleMenu} >
+          <div
+            className={`${styles.toggle} ${toggle ? styles.active : ""}`}
+            onClick={toggleMenu}
+          >
             <FontAwesomeIcon icon={faBars} />
+            <li><Button item="About" /></li>
+            <li><Button item="Skills" /></li>
+            <li><Button item="Experience" /></li>
+            <li><Button item="Projects" /></li>
+            <li><Button item="Contact" /></li>
+            {/* <li><Button item="About" /></li>
+            <li><Button item="Skills" /></li>
+            <li><Button item="Experience" /></li>
+            <li><Button item="Projects" /></li>
+            <li><Button item="Contact" /></li> */}
           </div>
         </ul>
       </div>
@@ -26,14 +39,3 @@ function Home() {
 }
 
 export default Home;
-
-{
-  /* <div className={styles.menu}>
-          <Button item="About" />
-          <Button item="Skills" />
-          <Button item="Experience" />
-          <Button />
-          <Button item="Projects" />
-          <Button item="Contact" />
-        </div> */
-}
