@@ -8,7 +8,8 @@ function Home() {
   const [toggle, setToggle] = React.useState(false);
 
   function toggleMenu() {
-    console.log("Connected");
+    const audio = new Audio("/public/menusound.mp3");
+    audio.play();
     setToggle(!toggle);
   }
 
@@ -21,16 +22,11 @@ function Home() {
             onClick={toggleMenu}
           >
             <FontAwesomeIcon icon={faBars} />
-            <li><Button item="About" /></li>
             <li><Button item="Skills" /></li>
             <li><Button item="Experience" /></li>
             <li><Button item="Projects" /></li>
             <li><Button item="Contact" /></li>
-            {/* <li><Button item="About" /></li>
-            <li><Button item="Skills" /></li>
-            <li><Button item="Experience" /></li>
-            <li><Button item="Projects" /></li>
-            <li><Button item="Contact" /></li> */}
+            <li><Button item="About" /></li>
           </div>
         </ul>
       </div>

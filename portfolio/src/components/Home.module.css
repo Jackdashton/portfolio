@@ -14,10 +14,10 @@
 .menu .toggle {
 
   background-color: white;
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  color: blue;
+  color:rgba(16, 37, 83, 0.93);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
 .menu .toggle.active {
   transform: rotate(315deg);
   box-shadow: 0 0 0 30px white, 0 0 0 28px white;
-  background: blue;
+  background: rgba(16, 37, 83, 0.93);
 }
 
 .menu li {
@@ -40,7 +40,7 @@
   list-style: none;
   visibility: hidden;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.7s;
   z-index: 10;
   color: white;
   transform: translate(-50%, -50%);
@@ -50,6 +50,11 @@
 .menu .toggle.active li {
   visibility: visible;
   opacity: 1;
+}
+
+.menu .toggle.active li a {
+  font-size: 20px;
+  color:rgba(16, 37, 83, 0.93); ;
 }
 
 .menu .toggle.active li{
@@ -66,26 +71,27 @@
 }
 /* About */
 .menu .toggle.active li:nth-child(2) {
-  transform: translateX(-50%) translateY(-50%) rotate(72deg) translate(140px) rotate(-27deg);
+  transform: translateX(-50%) translateY(-50%) rotate(72deg) translate(160px) rotate(-27deg);
 }
 /* Skills */
 .menu .toggle.active li:nth-child(3) {
-  transform: translateX(-50%) translateY(-50%) rotate(144deg) translate(140px) rotate(-98deg);
+  transform: translateX(-50%) translateY(-50%) rotate(144deg) translate(160px) rotate(-98deg);
 }
 /* Experience */
 .menu .toggle.active li:nth-child(4) {
-  transform: translateX(-50%) translateY(-50%) rotate(216deg) translate(140px) rotate(-171deg);
+  transform: translateX(-50%) translateY(-50%) rotate(216deg) translate(160px) rotate(-171deg);
 }
 /* Project */
 .menu .toggle.active li:nth-child(5) {
-  transform: translateX(-50%) translateY(-50%) rotate(288deg) translate(140px) rotate(-243deg);
+  transform: translateX(-50%) translateY(-50%) rotate(288deg) translate(160px) rotate(-243deg);
 }
 
 /* Contact */
 .menu .toggle.active li:nth-child(6) {
-  transform: translateX(-50%) translateY(-50%) rotate(360deg) translate(140px) rotate(-315deg);
+  transform: translateX(-50%) translateY(-50%) rotate(360deg) translate(160px) rotate(-315deg);
 }
 
 /* translate(140px) controls distance from the middle */
 /* rotate(360deg) controls the position around the circle,
 in which we're working with 5 components, therefore 360/5=72deg */
+/* Second rotate is for the Button rotation */
