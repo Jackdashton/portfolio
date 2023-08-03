@@ -53,3 +53,30 @@ img {
   /* offset-x | offset-y | blur-radius | color */
   text-shadow: 1px 1px 4px rgba(40, 219, 201, 0.84);
 }
+
+/* Responsive Design - Ensure viewport in metatag in index.html */
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .wrapper{
+    background-color: yellow;
+  }
+}
+/* Tablets */
+@media screen and (min-width: 600px) {
+  .wrapper{
+    background-color: green;
+  }
+}
+/* Laptops */
+@media screen and (min-width: 992px) {
+  .wrapper{
+    background-color: blue;
+  }
+}
+/* Desktops and large laptops */
+@media screen and (min-width: 1200px) {
+  .wrapper{
+    background-color: red;
+  }
+}

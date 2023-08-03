@@ -11,7 +11,6 @@ function Skills() {
 
   function handleSkillClick(skill) {
     setSelectedSkill(skillData.find((item) => item.id === skill.id));
-    console.log(skill);
   }
 
   return (
