@@ -8,7 +8,7 @@ function Home() {
   const [toggle, setToggle] = React.useState(false);
 
   function toggleMenu() {
-    const audio = new Audio("/public/menusound.mp3");
+    const audio = new Audio("/menusound.mp3");
     audio.play();
     setToggle(!toggle);
   }

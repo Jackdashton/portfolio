@@ -53,3 +53,82 @@ img {
   /* offset-x | offset-y | blur-radius | color */
   text-shadow: 1px 1px 4px rgba(40, 219, 201, 0.84);
 }
+
+/* Responsive Design - Ensure viewport in metatag in index.html */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column; /* Adjust the layout to stack elements in a column on smaller screens */
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 90vw;
+    gap: 2rem; /* Reduce the gap between elements for smaller screens */
+  }
+  .information h4 {
+    font-size: 25px;
+  }
+  .information p {
+    font-size: 25px;
+  }
+  img {
+    max-width: 75vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column; /* Adjust the layout to stack elements in a column on smaller screens */
+    padding: 1rem;
+    margin: 1rem;
+    gap: 2rem; /* Reduce the gap between elements for smaller screens */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column; /* Adjust the layout to stack elements in a column on smaller screens */
+    padding: 1rem;
+    margin: 1rem;
+    gap: 2rem; /* Reduce the gap between elements for smaller screens */
+  }
+  .information h4 {
+    font-size: 20px;
+  }
+  .information p {
+    font-size: 20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 1rem;
+    gap: 10rem;
+  }
+  .information h4 {
+    font-size: 15px;
+  }
+  .information p {
+    font-size: 15px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 1rem;
+    gap: 10rem;
+  }
+}
