@@ -56,27 +56,43 @@ img {
 
 /* Responsive Design - Ensure viewport in metatag in index.html */
 
-/* Mobile */
-@media screen and (max-width: 600px) {
-  .wrapper{
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    background-color: lightblue;
+  }
+  .information h4 {
+    font-size: 35px;
+  }
+  .information p {
+    font-size: 35px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    background-color: grey;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
     background-color: yellow;
   }
 }
-/* Tablets */
-@media screen and (min-width: 600px) {
-  .wrapper{
-    background-color: green;
-  }
-}
-/* Laptops */
-@media screen and (min-width: 992px) {
-  .wrapper{
-    background-color: blue;
-  }
-}
-/* Desktops and large laptops */
-@media screen and (min-width: 1200px) {
-  .wrapper{
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .wrapper {
     background-color: red;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    background-color: green;
   }
 }
