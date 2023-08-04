@@ -1,5 +1,5 @@
 #SkillColumn h3 {
-  color:rgba(16, 37, 83, 0.93);
+  color: rgba(16, 37, 83, 0.93);
 }
 
 .wrapper {
@@ -50,4 +50,100 @@
 .icons button img {
   height: 65px;
   width: 65px;
+}
+
+/* Responsive Design - Ensure viewport in metatag in index.html */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    max-width: 90vw;
+  }
+  .icons button img {
+    height: 20px;
+    width: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+  #skillColumn {
+    width: 80%;
+  }
+  .skills {
+    display: flex;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    max-width: 90vw;
+  }
+  .icons button img {
+    height: 20px;
+    width: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+  #skillColumn {
+    width: 80%;
+  }
+  .skills {
+    display: flex;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    max-width: 95vw;
+  }
+  #skillColumn p {
+    margin: 1.25rem;
+  }
+  #skillColumn {
+    width: 30%;
+  }
+  .skills {
+    gap: 24px;
+    width: 70%;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .icons button {
+    border: 1px solid rgba(40, 219, 201, 0.84);
+  }
+
+  .icons button img {
+    height: 60px;
+    width: 60px;
+  }
+  .column {
+    width: 30%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
