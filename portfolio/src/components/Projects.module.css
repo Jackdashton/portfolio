@@ -42,3 +42,19 @@
 .gridCard {
   margin-bottom: 10px;
 }
+
+/* Responsive Design - Ensure viewport in metatag in index.html */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .gridContainer {
+    max-width: 90vw;
+  }
+  .gridItem{
+    max-width: 90vw;
+  }
+  .gridCard{
+    max-width: 90vw;
+  }
+}
+
