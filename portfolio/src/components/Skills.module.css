@@ -1,5 +1,5 @@
 #SkillColumn h3 {
-  color:rgba(16, 37, 83, 0.93);
+  color: rgba(16, 37, 83, 0.93);
 }
 
 .wrapper {
@@ -50,4 +50,64 @@
 .icons button img {
   height: 65px;
   width: 65px;
+}
+
+/* Responsive Design - Ensure viewport in metatag in index.html */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    max-width: 90vw;
+  }
+  .icons button img {
+    height: 20px;
+    width: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+  #skillColumn {
+    width: 80%;
+  }
+  .skills {
+    display: flex;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .wrapper {
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+  }
+  .information h4 {
+  }
+  .information p {
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .wrapper {
+  }
+  .information h4 {
+  }
+  .information p {
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+  }
 }
