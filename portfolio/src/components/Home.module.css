@@ -1,5 +1,5 @@
 .container {
-  width: 100%;
+  max-width: 100vw;
   height: 100%;
 }
 
@@ -9,15 +9,15 @@
   justify-content: center;
   height: 75vh;
   gap: 5rem;
+  overflow: hidden;
 }
 
 .menu .toggle {
-
   background-color: white;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  color:rgba(16, 37, 83, 0.93);
+  color: rgba(16, 37, 83, 0.93);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,6 @@
   z-index: 10;
   color: white;
   transform: translate(-50%, -50%);
-
 }
 
 .menu .toggle.active li {
@@ -54,10 +53,10 @@
 
 .menu .toggle.active li a {
   font-size: 20px;
-  color:rgba(16, 37, 83, 0.93); ;
+  color: rgba(16, 37, 83, 0.93);
 }
 
-.menu .toggle.active li{
+.menu .toggle.active li {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -67,31 +66,114 @@
 
 /* Parent component? */
 .menu .toggle.active li:nth-child(1) {
-  transform: translateX(-50%) translateY(-50%) rotate(0deg) translate(140px) rotate(-72deg);
+  transform: translateX(-50%) translateY(-50%) rotate(0deg) translate(140px)
+    rotate(-72deg);
 }
 /* About */
 .menu .toggle.active li:nth-child(2) {
-  transform: translateX(-50%) translateY(-50%) rotate(72deg) translate(160px) rotate(-27deg);
+  transform: translateX(-50%) translateY(-50%) rotate(72deg) translate(160px)
+    rotate(-27deg);
 }
 /* Skills */
 .menu .toggle.active li:nth-child(3) {
-  transform: translateX(-50%) translateY(-50%) rotate(144deg) translate(160px) rotate(-98deg);
+  transform: translateX(-50%) translateY(-50%) rotate(144deg) translate(160px)
+    rotate(-98deg);
 }
 /* Experience */
 .menu .toggle.active li:nth-child(4) {
-  transform: translateX(-50%) translateY(-50%) rotate(216deg) translate(160px) rotate(-171deg);
+  transform: translateX(-50%) translateY(-50%) rotate(216deg) translate(160px)
+    rotate(-171deg);
 }
 /* Project */
 .menu .toggle.active li:nth-child(5) {
-  transform: translateX(-50%) translateY(-50%) rotate(288deg) translate(160px) rotate(-243deg);
+  transform: translateX(-50%) translateY(-50%) rotate(288deg) translate(160px)
+    rotate(-243deg);
 }
 
 /* Contact */
 .menu .toggle.active li:nth-child(6) {
-  transform: translateX(-50%) translateY(-50%) rotate(360deg) translate(160px) rotate(-315deg);
+  transform: translateX(-50%) translateY(-50%) rotate(360deg) translate(160px)
+    rotate(-315deg);
 }
 
 /* translate(140px) controls distance from the middle */
 /* rotate(360deg) controls the position around the circle,
 in which we're working with 5 components, therefore 360/5=72deg */
 /* Second rotate is for the Button rotation */
+
+/* Responsive Design - Ensure viewport in metatag in index.html */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100vw;
+    display: flex;
+
+  }
+  .menu {
+    max-width: 100vw;
+
+  }
+  .menu .toggle {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+
+  }
+
+  li {
+    max-width: 100vw;
+  }
+
+  .menu .toggle.active {
+    visibility: hidden;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .menu .toggle.active li a {
+    font-size: 15px;
+    color: rgba(16, 37, 83, 0.93);
+  }
+
+  .menu .toggle.active li:nth-child(2) {
+    transform: translateX(-50%) translateY(-50%) rotate(72deg) translate(100px)
+      rotate(-27deg);
+  }
+
+  .menu .toggle.active li:nth-child(3) {
+    transform: translateX(-50%) translateY(-50%) rotate(144deg) translate(100px)
+      rotate(-98deg);
+  }
+
+  .menu .toggle.active li:nth-child(4) {
+    transform: translateX(-50%) translateY(-50%) rotate(216deg) translate(100px)
+      rotate(-171deg);
+  }
+
+  .menu .toggle.active li:nth-child(5) {
+    transform: translateX(-50%) translateY(-50%) rotate(288deg) translate(100px)
+      rotate(-243deg);
+  }
+
+  .menu .toggle.active li:nth-child(6) {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg) translate(100px)
+      rotate(-315deg);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
