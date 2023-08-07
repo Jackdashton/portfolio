@@ -39,3 +39,22 @@
   .wrapper img {
     width: 14rem;
   }
+
+    /* Responsive Design - Ensure viewport in metatag in index.html */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  ul {
+    margin-bottom: 5px;
+    padding: 0px;
+    width: 100%;
+  }
+  li {
+    margin-bottom: 5px;
+    padding: 0px;
+    width: 100%;
+  }
+  .wrapper {
+    margin: 0px;
+  }
+}
