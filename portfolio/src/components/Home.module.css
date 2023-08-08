@@ -101,8 +101,6 @@
 in which we're working with 5 components, therefore 360/5=72deg */
 /* Second rotate is for the Button rotation */
 
-/* Responsive Design - Ensure viewport in metatag in index.html */
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .container {
@@ -160,20 +158,4 @@ in which we're working with 5 components, therefore 360/5=72deg */
     transform: translateX(-50%) translateY(-50%) rotate(360deg) translate(100px)
       rotate(-315deg);
   }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }

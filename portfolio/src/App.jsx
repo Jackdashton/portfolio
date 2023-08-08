@@ -13,6 +13,7 @@ import Movie from "./components/projects/Movie";
 import Owl from "./components/projects/Owl";
 import Drum from "./components/projects/Drum";
 import Task from "./components/projects/Task";
+import Esolperth from "./components/projects/Esolperth";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/owl" element={<Owl />} />
         <Route path="/drum" element={<Drum />} />
         <Route path="/task" element={<Task />} />
+        <Route path="/esolperth" element={<Esolperth />} />
       </Routes>
       <Footer />
     </div>
