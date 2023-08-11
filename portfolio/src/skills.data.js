@@ -107,7 +107,7 @@ export const skillData = [
     id: "blue",
     title: "Bluebeam",
     experience:
-      "In my 3+ years as a structural engineer, I frequently used Bleubeam to create detailed sketches to take concepts from a basic level to implementation",
+      "In my 3+ years as a structural engineer, I frequently used Bluebeam to create detailed sketches to take concepts from a basic level to implementation",
     projects: "19+ Structural Engineering Projects",
   },
   {
