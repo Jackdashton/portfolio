@@ -41,7 +41,7 @@ function Contact() {
           <FontAwesomeIcon icon={faPhone} size="2xl" />
           <br />
           <br />
-          Please use email or LinkedIn for initial contact. A telphone number
+          Please use email or LinkedIn for initial contact. A telephone number
           will then be provided.
         </div>
       </div>
