@@ -48,4 +48,11 @@ export const projectData = [
     tech: "WordPress, CSS & SEO",
     images: ["esol1","esol2","esol3","esol4"],
   },
+  {
+    id: crypto.randomUUID(),
+    title: "Word Game",
+    link: "wordgame",
+    tech: "React.js, NPM, CSS & HTML",
+    images: ["esol1","esol2","esol3","esol4"],
+  },
 ];
