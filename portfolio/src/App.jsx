@@ -15,6 +15,7 @@ import Drum from "./components/projects/Drum";
 import Task from "./components/projects/Task";
 import PageNotFound from "./components/PageNotFound"
 import Esolperth from "./components/projects/Esolperth";
+import WordGame from "./components/projects/WordGame";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/drum" element={<Drum />} />
         <Route path="/task" element={<Task />} />
         <Route path="/esolperth" element={<Esolperth />} />
+        <Route path="/wordgame" element={<WordGame />} />
         <Route path="*" element={<PageNotFound />}  />
       </Routes>
       <Footer />
