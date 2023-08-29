@@ -1,0 +1,14 @@
+.form {
+  padding: 50px;
+  margin: 10px;
+  border: 1px solid white;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.row {
+  padding: 10px;
+}
