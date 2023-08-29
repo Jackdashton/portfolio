@@ -29,7 +29,7 @@ function Drum() {
           </p>
           <h3>Link:</h3>
           <a
-            href="https://github.com/Jackdashton/drumkit"
+            href="https://drumkit.jackashton.dev/"
             target="_blank"
             rel="noreferrer"
           >

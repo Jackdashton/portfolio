@@ -28,7 +28,7 @@ function Task() {
           </p>
           <h3>Link:</h3>
           <a
-            href="https://github.com/Jackdashton/to-do-list"
+            href="https://task-list.jackashton.dev/"
             target="_blank"
             rel="noreferrer"
           >

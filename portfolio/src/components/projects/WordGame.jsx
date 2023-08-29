@@ -29,11 +29,11 @@ function WordGame() {
           </p>
           <h3>Link:</h3>
           <a
-            href="https://github.com/Jackdashton/Wordle"
+            href="https://wordle.jackashton.dev/"
             target="_blank"
             rel="noreferrer"
           >
-            Github
+            Wordle
           </a>
           <br />
         </div>
