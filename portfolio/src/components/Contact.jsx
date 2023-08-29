@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 // import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import ContactForm from './ContactForm';
 
 function Contact() {
   return (
@@ -46,7 +45,6 @@ function Contact() {
           will then be provided.
         </div>
       </div>
-      <ContactForm />
     </>
   );
 }

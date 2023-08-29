@@ -35,7 +35,7 @@ function Owl() {
           </p>
           <h3>Link:</h3>
           <a
-            href="https://github.com/Jackdashton/Escape-the-Owl"
+            href="https://escape-the-owl.jackashton.dev/"
             target="_blank"
             rel="noreferrer"
           >
