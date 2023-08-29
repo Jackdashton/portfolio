@@ -53,6 +53,6 @@ export const projectData = [
     title: "Word Game",
     link: "wordgame",
     tech: "React.js, NPM, CSS & HTML",
-    images: ["esol1","esol2","esol3","esol4"],
+    images: ["word1","word2","word3","word4"],
   },
 ];
